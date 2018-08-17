@@ -5,5 +5,36 @@ html, body {
 .main {
     float: left;
     margin: 20px;
+    padding: 20px;
     background-color: #fff;
+}
+.main .layui-form-item {
+    width: 240px;
+}
+.main .search-nav .layui-form .text-box {
+    float: left;
+}
+.text-box label {
+    width: 60px;
+}
+.text-box .layui-input-block {
+    margin-left: 90px;
+}
+.text-box .layui-input-block input {
+    width: 100px;
+}
+.text-box .layui-input-inline input {
+    width: 100px;
+}
+.main .search-nav .layui-btn {
+    margin-left: 20px;
+}
+.table-box .layui-table {
+    width: 100%;
+}
+.table-box .editbtn, .table-box .delbtn, .table-box .checkbtn {
+    cursor: pointer;
+}
+.table-box .editbtn{
+    margin: 0 5px;
 }

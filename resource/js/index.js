@@ -16,7 +16,7 @@ $(function(){
     // layui调用时需要的js
     layui.use('element', function(){
         var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
-        
+
         //监听导航点击
         // element.on('nav(demo)', function(elem){
         //     //console.log(elem)
@@ -32,7 +32,4 @@ $(function(){
             $('#iframe').attr('src', './iframes/' + this.className.split('-')[0] + '/' + this.className.split('-')[1] + '.html')
         }
     })
-    function ttt(){
-        alert('1')
-    }
 })
