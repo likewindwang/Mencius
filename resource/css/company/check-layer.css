@@ -1,0 +1,14 @@
+.text-box .layui-form-label {
+    text-align: left;
+    width: 60px;
+}
+.text-box .layui-input-block {
+    margin-left: 90px;
+}
+.text-box .layui-input {
+    width: 182px
+}
+form .layui-unselect, form .layui-form-select{
+    width: 182px
+}
+.person-id, .person-name, .person-outDate { margin: 15px 0; }

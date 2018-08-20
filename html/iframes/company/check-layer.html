@@ -7,27 +7,77 @@
         <title>查看弹窗</title>
         <link rel="stylesheet" href="../../../resource/css/reset.css">
         <link rel="stylesheet" href="../../../resource/layui/css/layui.css" media="all">
+        <link rel="stylesheet" href="../../../resource/css/company/check-layer.css">
     </head>
     <body>
         <div class="check-panl">
             <ul class="person-detail">
                 <li class="person-id">
-                    ID: <span></span>
+                    <div class="text-box">
+                        <label class="layui-form-label">ID</label>
+                        <div class="layui-input-block">
+                          <input type="text" name="id" lay-verify="title" autocomplete="off" class="layui-input person-id">
+                        </div>
+                    </div>
                 </li>
                 <li class="person-name">
-                    姓名： <span></span>
+                    <div class="text-box">
+                        <label class="layui-form-label">姓名</label>
+                        <div class="layui-input-block">
+                          <input type="text" name="personName" lay-verify="required" autocomplete="off" class="layui-input person-name" placeholder="请输入姓名" disabled>
+                        </div>
+                    </div>
                 </li>
                 <li class="person-sex">
-                    性别： <span></span>
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item text-box">
+                            <label class="layui-form-label">性别</label>
+                            <div class="layui-input-block">
+                                <select name="interest" lay-filter="aihao">
+                                    <option value="0">男</option>
+                                    <option value="1">女</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form> 
                 </li>
                 <li class="person-deplt">
-                    部门： <span></span>
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item text-box">
+                            <label class="layui-form-label">部门</label>
+                            <div class="layui-input-block">
+                                <select name="interest" lay-filter="aihao" class="person-section">
+                                    <option value=""></option>
+                                    <option value="1">人事部</option>
+                                    <option value="2">经理部</option>
+                                    <option value="3">市场部</option>
+                                    <option value="4">运营部</option>
+                                    <option value="5">产品部</option>
+                                    <option value="6">研发部</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
                 </li>
                 <li class="person-inDate">
-                    入职时间： <span></span>
+                    <div class="layui-form text-box">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">入职时间</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input person-inTime" id="test1-1" placeholder="yyyy-MM-dd">
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li class="person-outDate">
-                    离职时间： <span></span>
+                    <div class="layui-form text-box">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">离职时间</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input person-outTime" id="test1-2" placeholder="yyyy-MM-dd">
+                            </div>
+                        </div>                    
+                    </div>
                 </li>
             </ul>
         </div>
